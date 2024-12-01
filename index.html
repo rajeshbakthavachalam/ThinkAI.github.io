@@ -6,20 +6,36 @@
     <title>ThinkAI - Explore Artificial Intelligence</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Inline styles for the background */
+        /* Enhanced styles for the background */
         body {
-            background-image: url('ThinkAI.jpeg');
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('ThinkAI.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             color: white; /* Ensure text is readable on the background */
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif; /* Modern, sleek font */
+            margin: 0;
+            padding: 0;
         }
 
         header {
-            background: rgba(0, 0, 0, 0.7); /* Semi-transparent header */
-            padding: 1rem;
+            background: rgba(0, 0, 0, 0.85); /* Slightly darker header for better contrast */
+            padding: 2rem 1rem;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+            color: #cccccc; /* Softer color for subtitle */
         }
 
         nav ul {
@@ -28,37 +44,83 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            background: rgba(0, 0, 0, 0.8); /* Semi-transparent background for navigation */
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         nav ul li {
-            margin: 0 1rem;
+            margin: 0 1.5rem;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 1rem 0;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         nav ul li a:hover {
-            text-decoration: underline;
+            color: #00d1ff; /* Bright cyan for hover */
+            transform: scale(1.1);
         }
 
         main {
             padding: 2rem;
-            background: rgba(0, 0, 0, 0.6); /* Fixed typo: replaced 'rba' with 'rgba' */
-            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background for content */
+            border-radius: 15px;
             margin: 2rem auto;
-            width: 80%;
-            max-width: 800px;
+            width: 85%;
+            max-width: 900px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add depth */
+        }
+
+        main h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: #00d1ff; /* Accent color */
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #00d1ff;
+            display: inline-block;
+        }
+
+        main p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        main ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        main ul li {
+            margin: 0.5rem 0;
+        }
+
+        main ul li a {
+            color: #00d1ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        main ul li a:hover {
+            color: #ffffff; /* Switch to white on hover */
         }
 
         footer {
             text-align: center;
             padding: 1rem;
-            background: rgba(0, 0, 0, 0.8); /* Fixed typo: replaced 'rba' with 'rgba' */
-            position: relative;
+            background: rgba(0, 0, 0, 0.9);
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
